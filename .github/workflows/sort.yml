@@ -1,32 +1,33 @@
-name: Sort Questions
+name: Sort Table
 
 on:
   push:
     branches:
-      - main
+      - main  # Adjust if your main branch is different
 
 jobs:
-  sort_questions:
+  sort-table:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '14'
 
-      - name: Install markdown-magic
-        run: npm install markdown-magic
+      - name: Install Dependencies
+        run: npm install markdown-table
 
-      - name: Run markdown-magic
-        run: npx markdown-magic README.md
-
-      - name: Commit sorted questions
+      - name: Sort Table
+        run: |
+          npx markdown-table -i README.md -s '#' --sort-ascending
+          
+      - name: Commit Changes
         run: |
           git config --local user.email "mannan.jnv123@gmail.com"
           git config --local user.name "abdul1mannan"
-          git add README.md
-          git commit -m "Auto sort questions"
+          git commit -am "Automatically sorted table"
           git push
