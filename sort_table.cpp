@@ -26,9 +26,16 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
 }
 
 // Function to compare rows based on the first column
+// Function to compare rows based on the first column
 bool compareRows(const std::vector<std::string>& row1, const std::vector<std::string>& row2) {
-    return std::stoi(row1[0]) < std::stoi(row2[0]);
+    try {
+        return std::stoi(row1[0]) < std::stoi(row2[0]);
+    } catch (const std::invalid_argument&) {
+        // Handle invalid input gracefully
+        return false; // For example, treat invalid inputs as greater than valid inputs
+    }
 }
+
 
 int main() {
     std::ifstream inFile("README.md");
