@@ -13,7 +13,6 @@ class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
         TreeNode*curr=root;
-        TreeNode*prev=root;
         vector<int>preOrder;
         while(curr!=NULL){
             if(curr->left==NULL){
