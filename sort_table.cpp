@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-
+#include<bits/stdc++.h>
 // Function to trim leading and trailing whitespaces from a string
 std::string trim(const std::string& str) {
     size_t first = str.find_first_not_of(" \t\n\r");
