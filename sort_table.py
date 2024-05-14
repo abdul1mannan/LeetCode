@@ -32,15 +32,6 @@ df_sorted = df.sort_values(by='No.')
 # Convert DataFrame back to Markdown table
 markdown_table = df_sorted.to_markdown(index=False, tablefmt='github')
 
-# Update README.md file
+# Update README.md file with sorted Markdown table
 with open('README.md', 'w') as file:
-    # Write the content before the table
-    for line in lines[:3]:
-        file.write(line + '\n')
-
-    # Write the sorted Markdown table
     file.write(markdown_table + '\n')
-    
-    # Write the content after the table
-    for line in lines[-2:]:
-        file.write(line + '\n')
