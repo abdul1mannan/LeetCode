@@ -36,9 +36,7 @@ markdown_table = df_sorted.to_markdown(index=False, tablefmt='github')
 print("Markdown table:")
 print(markdown_table)
 
-# Update README.md file with sorted Markdown table
-with open('README.md', 'w') as file:
+with open('readme.md', 'w') as file:
+    # Write the sorted Markdown table
     file.write(markdown_table + '\n')
-
-# Debug: Print confirmation message
 print("README.md file updated successfully!")
