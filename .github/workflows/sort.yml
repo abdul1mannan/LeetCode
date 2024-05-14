@@ -1,27 +1,32 @@
-name: Sort LeetCode Problems
+name: Sort Questions
 
 on:
   push:
     branches:
-      - main  # Adjust if your main branch has a different name
+      - main
 
 jobs:
-  sort:
+  sort_questions:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Sort LeetCode Problems
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install markdown-magic
+        run: npm install markdown-magic
+
+      - name: Run markdown-magic
+        run: npx markdown-magic README.md
+
+      - name: Commit sorted questions
         run: |
-          sed -i '/^| # | Title | Solution | Difficulty |$/d' README.md
-          sort -n -t "|" -k2 README.md > temp.md
-          mv temp.md README.md
-          
-      - name: Commit Changes
-        run: |
-          git config --local user.email "mannan.jnv123@gmail.com"  # Replace with your email
-          git config --local user.name "abdul1mannan"  # Replace with your GitHub username
+          git config --local user.email "mannan.jnv123@gmail.com"
+          git config --local user.name "abdul1mannan"
           git add README.md
-          git commit -m "Auto sort LeetCode problems"
+          git commit -m "Auto sort questions"
           git push
