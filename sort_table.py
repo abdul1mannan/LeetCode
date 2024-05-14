@@ -29,8 +29,16 @@ df = df.dropna(subset=['No.'])
 # Sort DataFrame by 'No.'
 df_sorted = df.sort_values(by='No.')
 
+# Check the sorted DataFrame
+print("Sorted DataFrame:")
+print(df_sorted)
+
 # Convert DataFrame back to Markdown table
 markdown_table = df_sorted.to_markdown(index=False, tablefmt='github')
+
+# Check the Markdown table
+print("\nMarkdown table:")
+print(markdown_table)
 
 # Update README.md file
 with open('README.md', 'w') as file:
