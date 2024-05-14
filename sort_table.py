@@ -1,4 +1,8 @@
+import os
 import pandas as pd
+
+# Print the current working directory
+print("Current Working Directory:", os.getcwd())
 
 # Read the README.md file
 with open('README.md', 'r') as file:
@@ -32,11 +36,7 @@ df_sorted = df.sort_values(by='No.')
 # Convert DataFrame back to Markdown table
 markdown_table = df_sorted.to_markdown(index=False, tablefmt='github')
 
-# Debug: Print the Markdown table
-print("Markdown table:")
-print(markdown_table)
-
+# Write the updated Markdown table to a new file named "readme.md"
 with open('readme.md', 'w') as file:
     # Write the sorted Markdown table
     file.write(markdown_table + '\n')
-print("README.md file updated successfully!")
