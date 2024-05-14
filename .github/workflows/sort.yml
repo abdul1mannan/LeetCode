@@ -1,29 +1,27 @@
-name: Sort Markdown Table
+name: Sort LeetCode Problems
 
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different
+      - main  # Adjust if your main branch has a different name
 
 jobs:
   sort:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Sort Markdown Table
+      - name: Sort LeetCode Problems
         run: |
-          # Extract the markdown table from the file
-          table_start=$(grep -n "| # |" README.md | cut -d ":" -f1)
-          table_end=$(grep -n "|---|" README.md | cut -d ":" -f1)
-          ((table_end--))
-          table_content=$(sed -n "$table_start,${table_end}p" README.md)
-
-          # Sort the table based on the first column
-          sorted_table=$(echo "$table_content" | sort -t "|" -k2 -n)
-
-          # Replace the old table with the sorted one
-          sed -i "${table_start},${table_end}d" README.md
-          sed -i "${table_start}i ${sorted_table}" README.md
+          sed -i '/^| # | Title | Solution | Difficulty |$/d' README.md
+          sort -n -t "|" -k2 README.md > temp.md
+          mv temp.md README.md
+          
+      - name: Commit Changes
+        run: |
+          git config --local user.email "mannan.jnv123@gmail.com"  # Replace with your email
+          git config --local user.name "abdul1mannan"  # Replace with your GitHub username
+          git add README.md
+          git commit -m "Auto sort LeetCode problems"
+          git push
