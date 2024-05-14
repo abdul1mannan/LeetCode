@@ -23,7 +23,7 @@ jobs:
 
       - name: Sort Table
         run: |
-          npx markdown-table -i README.md -s '#' --sort-ascending
+          markdown-table -i README.md -s '#' --sort-ascending
           
       - name: Commit Changes
         run: |
