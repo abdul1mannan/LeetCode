@@ -10,6 +10,7 @@ LeetCode
 |   152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                 | C++        | Medium       |
 |  1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)             | C++        | Medium       |
 |  1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | C++        | Medium       |
+|  94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | C++        | Medium       |
 
 
 
