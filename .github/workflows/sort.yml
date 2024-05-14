@@ -1,3 +1,163 @@
+Chat history
+ChatGPT
+New chat
+
+Today
+Sort By Problem Number
+
+
+Sort Table GitHub Action
+Sort Questions Automatically Using GitHub
+Yesterday
+Intern Journey: CodeCraftChronicles
+InternTech Journey Guide
+Previous 7 Days
+Footer Component Structure
+Generate Package-Lock File
+Event Listener Example
+Dark/Light Theme Options
+Google Search Website
+Webpage Building with Search
+Search Icon Button Implementation
+Founding Member Contributions.
+Eligibility in Non-Circuital Branch
+Salesforce Attraction: Values, Impact
+Overcoming setbacks with resilience
+GSSoC: Selected Contributor
+Search Box Focus Event
+Linked List Traversal Algorithm
+Temp & Wind Update Absence
+Real-Time Date Display
+Wind Data Request.
+Incorrect Date-Time Display
+Head Pointer Initialization: NULL
+Roman Empire Mouthwash: Urine
+यादगार सर्दी की रातें
+Overflow Prevention in Multiplication
+Static Cast Explained
+Upgrade plan
+Get GPT-4, DALL·E, and more
+
+User
+Abdul Mannan
+
+Close sidebar
+ChatGPT 3.5
+
+User
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)  | C++ | Medium
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | C++ | Easy
+|53|[ Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|C++ | Medium sort this according to # in github
+ChatGPT
+To sort the table according to the "#" column on GitHub, you would need to reorder the rows based on the numerical value in ascending order. Here's how you can do it:
+
+markdown
+Copy code
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|53|[ Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|C++ | Medium |
+|73|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)  | C++ | Medium |
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | C++ | Easy |
+This rearrangement lists the problems in ascending order of their numbers.
+
+User
+using github
+ChatGPT
+To sort the table according to the "#" column on GitHub, you can follow these steps:
+
+Go to your GitHub repository where the markdown file containing the table is located.
+Open the markdown file in the repository.
+Find the table section in the markdown file.
+Copy the contents of the table.
+Paste the copied table contents into a GitHub issue or pull request comment.
+GitHub will automatically render the table.
+Hover over the column header "#" in the rendered table.
+Click on the arrow icon that appears next to the "#" column header.
+Select "Sort ascending" or "Sort descending" as per your preference.
+GitHub will sort the table based on the "#" column accordingly.
+Following these steps will allow you to sort the table directly on GitHub.
+
+User
+using github workflow readmefile
+usernname abdul1mannan
+
+2 / 2
+
+ChatGPT
+To automatically sort the table in your README file on GitHub using GitHub Actions, you can create a workflow that parses the README file, sorts the table based on the "#" column, and then commits the changes back to the repository. Here's a basic example of how you can achieve this:
+
+Create a Workflow File: Create a .github/workflows/sort-table.yml file in your repository.
+
+Define the Workflow: Define the workflow to trigger on a push event and specify the job steps.
+
+yaml
+Copy code
+name: Sort Table
+
+on:
+  push:
+    branches:
+      - main  # Adjust if your main branch is different
+
+jobs:
+  sort-table:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install markdown-table
+
+      - name: Sort Table
+        run: |
+          npx markdown-table -i README.md -s '#' --sort-ascending
+          
+      - name: Commit Changes
+        run: |
+          git config --local user.email "abdul1mannan@example.com"
+          git config --local user.name "abdul1mannan"
+          git commit -am "Automatically sorted table"
+          git push
+Adjust Configuration: Modify the workflow file according to your specific requirements. Ensure that the README.md path and the sorting column are correctly specified.
+
+Commit and Push Workflow: Commit the changes to your repository and push them to trigger the workflow.
+
+After setting up this workflow, whenever you push changes to your repository, the workflow will automatically sort the table in your README file based on the "#" column and commit the changes back to the repository with the configured username. Make sure to replace "abdul1mannan@example.com" and "abdul1mannan" with your actual email and GitHub username.
+
+User
+Run npx markdown-table -i README.md -s '#' --sort-ascending
+  
+npx: installed 1 in 0.552s
+command not found: markdown-table
+ChatGPT
+It seems like the markdown-table package is not installed or not available globally in your environment. Here's how you can install it globally:
+
+bash
+Copy code
+npm install -g markdown-table
+Once installed globally, you should be able to run the markdown-table command from anywhere in your terminal. Then you can run the command you mentioned:
+
+bash
+Copy code
+npx markdown-table -i README.md -s '#' --sort-ascending
+This command will sort the table in your README.md file based on the "#" column in ascending order. Make sure to replace README.md with the actual path to your README file.
+
+User
+add this in abouve workflow
+ChatGPT
+To integrate the installation of markdown-table into your GitHub Actions workflow, you can modify the workflow file to include a step that installs markdown-table before sorting the table. Here's how you can adjust your workflow file:
+
+yaml
+Copy code
 name: Sort Table
 
 on:
@@ -17,8 +177,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          
-       - name: Install Dependencies
+
+      - name: Install Dependencies
         run: npm install -g markdown-table
 
       - name: Sort Table
