@@ -1,0 +1,29 @@
+name: Sort Markdown Table
+
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is different
+
+jobs:
+  sort:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Sort Markdown Table
+        run: |
+          # Extract the markdown table from the file
+          table_start=$(grep -n "| # |" README.md | cut -d ":" -f1)
+          table_end=$(grep -n "|---|" README.md | cut -d ":" -f1)
+          ((table_end--))
+          table_content=$(sed -n "$table_start,${table_end}p" README.md)
+
+          # Sort the table based on the first column
+          sorted_table=$(echo "$table_content" | sort -t "|" -k2 -n)
+
+          # Replace the old table with the sorted one
+          sed -i "${table_start},${table_end}d" README.md
+          sed -i "${table_start}i ${sorted_table}" README.md
