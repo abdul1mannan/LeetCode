@@ -1,0 +1,25 @@
+name: Sort Markdown Table
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+
+jobs:
+  sort_table:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install g++
+      run: sudo apt-get install g++
+
+    - name: Compile Sort Table C++ Program
+      run: g++ sort_table.cpp -o sort_table
+
+    - name: Run Sort Table C++ Program
+      run: ./sort_table
