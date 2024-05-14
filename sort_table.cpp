@@ -1,5 +1,34 @@
 #include<bits/stdc++.h>
 
+int main() {
+    std::ifstream inFile("README.md");
+    std::ofstream outFile("README.md.tmp");
+    std::vector<std::vector<std::string>> table;
+
+    std::string line;
+    bool inTable = false;
+
+    // Read the Markdown file line by line
+    while (std::getline(inFile, line)) {
+        if (!inTable && line.find("|") != std::string::npos) {
+            inTable = true;
+            continue;
+        }
+        if (inTable) {
+            if (line.find("|") != std::string::npos) {
+                // Split the line into columns
+                std::vector<std::string> columns = split(line, '|');
+                // Ignore header and footer rows
+                if (columns.size() > 1) {
+                    table.push_back(columns);
+                }
+            } else {
+                inTable = false;
+            }
+        }
+    }
+
+
 // Function to trim leading and trailing whitespaces from a string
 std::string trim(const std::string& str) {
     size_t first = str.find_first_not_of(" \t\n\r");
@@ -31,20 +60,23 @@ bool compareRows(const std::vector<std::string>& row1, const std::vector<std::st
     }
 }
 
+
 int main() {
     std::ifstream inFile("README.md");
     std::ofstream outFile("README.md.tmp");
     std::vector<std::vector<std::string>> table;
+    bool inTable = false;
 
     std::string line;
-    bool inTable = false;
 
     // Read the Markdown file line by line
     while (std::getline(inFile, line)) {
         if (!inTable && line.find("|") != std::string::npos) {
             inTable = true;
+            outFile << line << "\n"; // Write header line
             continue;
         }
+
         if (inTable) {
             if (line.find("|") != std::string::npos) {
                 // Split the line into columns
@@ -52,25 +84,28 @@ int main() {
                 // Ignore header and footer rows
                 if (columns.size() > 1) {
                     table.push_back(columns);
+                } else {
+                    inTable = false;
+                    // Sort the table based on the first column (assuming it's the `#` column)
+                    std::sort(table.begin(), table.end(), compareRows);
+                    // Write the sorted table to the output file
+                    for (const auto& row : table) {
+                        for (size_t i = 0; i < row.size(); ++i) {
+                            outFile << row[i];
+                            if (i < row.size() - 1) {
+                                outFile << "|";
+                            }
+                        }
+                        outFile << "\n";
+                    }
                 }
             } else {
                 inTable = false;
+                outFile << line << "\n"; // Write footer line
             }
+        } else {
+            outFile << line << "\n"; // Write non-table content
         }
-    }
-
-    // Sort the table based on the first column (assuming it's the `#` column)
-    std::sort(table.begin(), table.end(), compareRows);
-
-    // Write the sorted table to the output file
-    for (const auto& row : table) {
-        for (size_t i = 0; i < row.size(); ++i) {
-            outFile << row[i];
-            if (i < row.size() - 1) {
-                outFile << "|";
-            }
-        }
-        outFile << "\n";
     }
 
     inFile.close();
