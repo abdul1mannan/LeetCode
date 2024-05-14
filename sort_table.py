@@ -11,10 +11,13 @@ lines = content.split('\n')
 table_data = [line.split('|')[1:-1] for line in lines[1:-1]]
 
 # Convert to DataFrame
-df = pd.DataFrame(table_data, columns=['#', 'Title', 'Solution', 'Difficulty'])
+df = pd.DataFrame(table_data, columns=['No.', 'Title', 'Solution', 'Difficulty'])
 
-# Sort DataFrame by #
-df_sorted = df.sort_values(by='#')
+# Convert 'No.' column to integers for sorting
+df['No.'] = df['No.'].apply(lambda x: int(x.strip('[]')))
+
+# Sort DataFrame by 'No.'
+df_sorted = df.sort_values(by='No.')
 
 # Convert DataFrame back to Markdown table
 markdown_table = df_sorted.to_markdown(index=False, tablefmt='github')
