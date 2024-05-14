@@ -1,31 +1,52 @@
-name: Sort Table
+import pandas as pd
 
-on:
-  push:
-    branches:
-      - main  # Adjust branch name if needed
-  pull_request:
-    branches:
-      - main  # Adjust branch name if needed
+# Read the README.md file
+with open('README.md', 'r') as file:
+    content = file.read()
 
-jobs:
-  sort-table:
-    runs-on: ubuntu-latest
+# Split the content into lines
+lines = content.split('\n')
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+# Extract table data
+table_data = [line.split('|')[1:-1] for line in lines[1:-1]]
 
-    - name: Install Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+# Convert to DataFrame
+df = pd.DataFrame(table_data, columns=['No.', 'Title', 'Solution', 'Difficulty'])
 
-    - name: Install dependencies
-      run: pip install pandas  # Assuming you use pandas for sorting
-      
-    - name: Install dependencies
-      run: pip install pandas tabulate
+# Function to convert a value to integer if possible, otherwise return None
+def try_convert_to_int(value):
+    try:
+        return int(value.strip('[]'))
+    except (ValueError, AttributeError):
+        return None
 
-    - name: Sort table
-      run: python sort_table.py
+# Apply the function to the 'No.' column
+df['No.'] = df['No.'].apply(try_convert_to_int)
+
+# Remove rows with None values in the 'No.' column
+df = df.dropna(subset=['No.'])
+
+# Sort DataFrame by 'No.'
+df_sorted = df.sort_values(by='No.')
+
+# Check the sorted DataFrame
+print("Sorted DataFrame:")
+print(df_sorted)
+
+# Convert DataFrame back to Markdown table
+markdown_table = df_sorted.to_markdown(index=False, tablefmt='github')
+
+# Check the Markdown table
+print("\nMarkdown table:")
+print(markdown_table)
+
+# Update README.md file
+with open('README.md', 'w') as file:
+    # Write the first line
+    file.write(lines[0] + '\n')
+    
+    # Write the sorted Markdown table
+    file.write(markdown_table + '\n')
+    
+    # Write the last line
+    file.write(lines[-1])
