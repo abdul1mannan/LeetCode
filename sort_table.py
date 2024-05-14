@@ -34,7 +34,7 @@ print("Sorted DataFrame:")
 print(df_sorted)
 
 # Convert DataFrame back to Markdown table
-markdown_table = df_sorted.to_markdown(index=False, tablefmt='github')
+markdown_table = df_sorted.to_markdown(index=False, tablefmt='github', columns=['No.', 'Title', 'Solution', 'Difficulty'])
 
 # Check the Markdown table
 print("\nMarkdown table:")
