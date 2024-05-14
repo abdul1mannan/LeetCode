@@ -1,9 +1,5 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <algorithm>
 #include<bits/stdc++.h>
+
 // Function to trim leading and trailing whitespaces from a string
 std::string trim(const std::string& str) {
     size_t first = str.find_first_not_of(" \t\n\r");
@@ -26,20 +22,13 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
 }
 
 // Function to compare rows based on the first column
-// Function to compare rows based on the first column
 bool compareRows(const std::vector<std::string>& row1, const std::vector<std::string>& row2) {
-    try {
-        return std::stoi(row1[0]) < std::stoi(row2[0]);
-    } catch (const std::invalid_argument&) {
-        // Handle invalid input gracefully
-        return false; // For example, treat invalid inputs as greater than valid inputs
-    }
+    return std::stoi(row1[0]) < std::stoi(row2[0]);
 }
-
 
 int main() {
     std::ifstream inFile("README.md");
-    std::ofstream outFile("sorted_README.md");
+    std::ofstream outFile("README.md.tmp");
     std::vector<std::vector<std::string>> table;
 
     std::string line;
@@ -82,7 +71,21 @@ int main() {
     inFile.close();
     outFile.close();
 
-    std::cout << "Table sorted and written to sorted_README.md\n";
+    // Replace the original README.md with the temporary file
+    std::remove("README.md");
+    std::rename("README.md.tmp", "README.md");
+
+    std::cout << "Table sorted and updated in README.md\n";
 
     return 0;
 }
+
+
+// bool compareRows(const std::vector<std::string>& row1, const std::vector<std::string>& row2) {
+//     try {
+//         return std::stoi(row1[0]) < std::stoi(row2[0]);
+//     } catch (const std::invalid_argument&) {
+//         // Handle invalid input gracefully
+//         return false; // For example, treat invalid inputs as greater than valid inputs
+//     }
+// }
