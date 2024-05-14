@@ -1,28 +1,28 @@
-name: Sort Markdown Table
+name: Sort Table
 
 on:
   push:
     branches:
-      - main
-    paths:
-      - README.md
+      - main  # Adjust branch name if needed
+  pull_request:
+    branches:
+      - main  # Adjust branch name if needed
 
 jobs:
-  sort_table:
+  sort-table:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v4
-      
-    - name: Set permissions
-      run: chmod -R 777 .
 
-    - name: Install g++
-      run: sudo apt-get install g++
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-    - name: Compile Sort Table C++ Program
-      run: g++ sort_table.cpp -o sort_table
+    - name: Install dependencies
+      run: pip install pandas  # Assuming you use pandas for sorting
 
-    - name: Run Sort Table C++ Program
-      run: ./sort_table
+    - name: Sort table
+      run: python sort_table.py
