@@ -18,6 +18,9 @@ LeetCode
 |  1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)                                       | C++        | Medium       |
 |  2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)             | C++        | Medium       |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/) | C++        | Medium       |
+|48| [Rotate Image](https://leetcode.com/problems/rotate-image/)|C++|Medium|
+|56| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)|C++|Medium|
+|88| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|C++|Easy|
 
 
 
