@@ -38,6 +38,7 @@ LeetCode
 |229| [Majority Element II](https://leetcode.com/problems/majority-element-ii/)|C++|Medium|
 |493| [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)|C++|Hard|
 |62| [Unique Paths](https://leetcode.com/problems/unique-paths/)|C++|Medium|
+|128| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|C++|Medium|
 
 
 
