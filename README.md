@@ -39,6 +39,9 @@ LeetCode
 |493| [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)|C++|Hard|
 |62| [Unique Paths](https://leetcode.com/problems/unique-paths/)|C++|Medium|
 |128| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)|C++|Medium|
+|3| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|C++|Medium|
+|15| [3Sum](https://leetcode.com/problems/3sum/)|C++|Medium|
+|18| [4Sum](https://leetcode.com/problems/4sum/)|C++|Medium|
 
 
 
