@@ -21,7 +21,7 @@ LeetCode
 |48| [Rotate Image](https://leetcode.com/problems/rotate-image/)|C++|Medium|
 |56| [Merge Intervals](https://leetcode.com/problems/merge-intervals/)|C++|Medium|
 |88| [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|C++|Easy|
-|287| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)C++|Medium|
+|287| [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)|C++|Medium|
 |2965| [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)|C++|Easy|
 |775| [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/)|C++|Medium|
 
