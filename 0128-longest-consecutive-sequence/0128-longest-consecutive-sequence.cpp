@@ -5,7 +5,7 @@ public:
         if(n==0){
             return 0;
         }
-        set<int>s;
+        unordered_set<int>s;
         
         int maximum=1;
           for (int i = 0; i < n; i++) {
