@@ -35,6 +35,9 @@ LeetCode
 |74| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|C++|Medium|
 |50| [Pow(x, n)](https://leetcode.com/problems/powx-n/)|C++|Medium|
 |169| [Majority Element](https://leetcode.com/problems/majority-element/)|C++|Easy|
+|229| [Majority Element II](https://leetcode.com/problems/majority-element-ii/)|C++|Medium|
+|493| [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)|C++|Hard|
+|62| [Unique Paths](https://leetcode.com/problems/unique-paths/)|C++|Medium|
 
 
 
