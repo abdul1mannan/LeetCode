@@ -32,6 +32,9 @@ LeetCode
 |  2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)               | C++        | Medium       |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)   | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
+|74| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|C++|Medium|
+|50| [Pow(x, n)](https://leetcode.com/problems/powx-n/)|C++|Medium|
+|169| [Majority Element](https://leetcode.com/problems/majority-element/)|C++|Easy|
 
 
 
