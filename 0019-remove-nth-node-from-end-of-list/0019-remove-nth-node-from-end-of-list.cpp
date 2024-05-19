@@ -27,7 +27,9 @@ public:
             fast=fast->next;
             slow=slow->next;
         }
+        ListNode *delNode=slow->next;
        slow->next=slow->next->next;
+        delete delNode;
         return head;
     }
 };
