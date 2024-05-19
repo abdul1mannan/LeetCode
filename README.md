@@ -48,6 +48,11 @@ LeetCode
 |  2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)               | C++        | Medium       |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)   | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
+|160| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|C++|Easy|
+|141| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|C++|Easy|
+|25| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|C++|Hard|
+|234| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|C++|Easy|
+|142| [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|C++|Medium|
 
 
 
