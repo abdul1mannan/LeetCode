@@ -42,6 +42,13 @@ LeetCode
 |3| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|C++|Medium|
 |15| [3Sum](https://leetcode.com/problems/3sum/)|C++|Medium|
 |18| [4Sum](https://leetcode.com/problems/4sum/)|C++|Medium|
+|206| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|C++|Easy|
+|876| [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|C++|Easy|
+|21| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|C++|Easy|
+|19| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|C++|Medium|
+|2| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|C++|Medium|
+|237| [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)|C++|Medium|
+
 
 
 
