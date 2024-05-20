@@ -53,7 +53,11 @@ LeetCode
 |25| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|C++|Hard|
 |234| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)|C++|Easy|
 |142| [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|C++|Medium|
-
+|61| [Rotate List](https://leetcode.com/problems/rotate-list/)|C++|Medium|
+|138| [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|C++|Medium|
+|26| [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)|C++|Easy|
+|42| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|C++|Hard|
+|485| [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)|C++|Easy|
 
 
 
