@@ -1,26 +1,24 @@
 class Solution {
 public:
     
-    void subsetsum(int ind,vector<int>d,vector<int>&nums,set<vector<int>>&sum){
-        if(ind==nums.size()){
-            sort(d.begin(),d.end());
-            sum.insert(d);
-            return;
-        }
-        d.push_back(nums[ind]);
-        subsetsum(ind+1,d,nums,sum);
+    void subsetsum(int ind,vector<int>&d,vector<int>&nums,vector<vector<int>>&ans){
+        ans.push_back(d);
+        
+       for(int i=ind;i<nums.size();i++){
+           if(i!=ind && nums[i]==nums[i-1]) continue;
+       
+        d.push_back(nums[i]);
+        subsetsum(i+1,d,nums,ans);
         d.pop_back();
-        subsetsum(ind+1,d,nums,sum);
+    }
     }
     vector<vector<int>>subsetsWithDup(vector<int>& nums) {
-      set<vector<int>>sum;
+      // set<vector<int>>sum;
         vector<vector<int>>ans;
         int n=nums.size();
+        sort(nums.begin(),nums.end());
         vector<int>d;
-        subsetsum(0,d,nums,sum);
-        for(auto it:sum){
-            ans.push_back(it);
-        }
+        subsetsum(0,d,nums,ans);
         return ans;
         
         
