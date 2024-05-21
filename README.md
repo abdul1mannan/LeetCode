@@ -64,6 +64,10 @@ LeetCode
 |  2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)               | C++        | Medium       |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)   | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
+|46| [Permutations](https://leetcode.com/problems/permutations/)|C++|Medium|
+|51| [N-Queens](https://leetcode.com/problems/n-queens/)|C++|Hard|
+|37| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|C++|Hard|
+
 
 
 
