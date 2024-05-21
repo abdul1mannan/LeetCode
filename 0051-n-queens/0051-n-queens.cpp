@@ -6,16 +6,16 @@ public:
             return;
         }
         for(int row=0;row<n;row++){
-            if(leftrow[row]==0&&upperdiagonal[row+col]==0&&lowerdiagonal[n-1+col-row]==0){
+            if(leftrow[row]==0&&upperdiagonal[row+col]==0&&lowerdiagonal[n-1+row-col]==0){
                 d[row][col]='Q';
                 leftrow[row]=1;
                 upperdiagonal[row+col]=1;
-                lowerdiagonal[n-1+col-row]=1;
+                lowerdiagonal[n-1+row-col]=1;
                 solve(col+1,d,ans,n,leftrow,upperdiagonal,lowerdiagonal);
                 d[row][col]='.';
                 leftrow[row]=0;
                 upperdiagonal[row+col]=0;
-                lowerdiagonal[n-1+col-row]=0;
+                lowerdiagonal[n-1+row-col]=0;
             }
         }
     }
