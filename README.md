@@ -67,6 +67,10 @@ LeetCode
 |46| [Permutations](https://leetcode.com/problems/permutations/)|C++|Medium|
 |51| [N-Queens](https://leetcode.com/problems/n-queens/)|C++|Hard|
 |37| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|C++|Hard|
+|540| [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|C++|Medium|
+|33| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|C++|Medium|
+|4| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|C++|Hard|
+
 
 
 
