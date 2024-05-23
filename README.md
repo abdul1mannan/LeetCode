@@ -70,6 +70,10 @@ LeetCode
 |540| [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|C++|Medium|
 |33| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|C++|Medium|
 |4| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|C++|Hard|
+|215| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|C++|Medium|
+|347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|C++|Medium|
+|295| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|C++|Hard|
+
 
 
 
