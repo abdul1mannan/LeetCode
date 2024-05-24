@@ -76,7 +76,10 @@ LeetCode
 |232| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)|C++|Easy|
 |225| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/)|C++|Easy|
 |20| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|C++|Easy|
-|496| [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|C|Easy|
+|496| [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|C++|Easy|
+|151| [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|C++|Medium|
+|13| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|C++|Easy|
+|14| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|C++|Easy|
 
 
 
