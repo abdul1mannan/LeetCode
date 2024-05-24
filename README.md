@@ -7,19 +7,27 @@ LeetCode
 |     1 | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                                           | C++        | Easy         |
 |     2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                                           | C++        | Medium       |
 |     3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)             | C++        | Medium       |
+|     4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)                                                   | C++        | Hard         |
 |     9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                       | C++        | Easy         |
+|    13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                                         | C++        | Easy         |
+|    14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                               | C++        | Easy         |
 |    15 | [3Sum](https://leetcode.com/problems/3sum/)                                                                                                 | C++        | Medium       |
 |    18 | [4Sum](https://leetcode.com/problems/4sum/)                                                                                                 | C++        | Medium       |
 |    19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                                         | C++        | Medium       |
+|    20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                       | C++        | Easy         |
 |    21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                                                             | C++        | Easy         |
 |    25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)                                                         | C++        | Hard         |
 |    26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)                                   | C++        | Easy         |
 |    31 | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                                         | C++        | Medium       |
+|    33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                             | C++        | Medium       |
+|    37 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)                                                                               | C++        | Hard         |
 |    39 | [Combination Sum](https://leetcode.com/problems/combination-sum/)                                                                           | C++        | Medium       |
 |    40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)                                                                     | C++        | Medium       |
 |    42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)                                                                   | C++        | Hard         |
+|    46 | [Permutations](https://leetcode.com/problems/permutations/)                                                                                 | C++        | Medium       |
 |    48 | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                                                                 | C++        | Medium       |
 |    50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/)                                                                                          | C++        | Medium       |
+|    51 | [N-Queens](https://leetcode.com/problems/n-queens/)                                                                                         | C++        | Hard         |
 |    53 | [ Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)                                                                        | C++        | Medium       |
 |    54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                                                               | C++        | Medium       |
 |    56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                                           | C++        | Medium       |
@@ -40,17 +48,25 @@ LeetCode
 |   141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                                       | C++        | Easy         |
 |   142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)                                                                 | C++        | Medium       |
 |   144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                             | C++        | Easy         |
+|   151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)                                                       | C++        | Medium       |
 |   152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                                         | C++        | Medium       |
 |   160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)                                         | C++        | Easy         |
 |   169 | [Majority Element](https://leetcode.com/problems/majority-element/)                                                                         | C++        | Easy         |
 |   191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                                         | C++        | Easy         |
 |   206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)                                                                   | C++        | Easy         |
+|   215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)                                           | C++        | Medium       |
+|   225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/)                                     | C++        | Easy         |
 |   229 | [Majority Element II](https://leetcode.com/problems/majority-element-ii/)                                                                   | C++        | Medium       |
+|   232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)                                     | C++        | Easy         |
 |   234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)                                                             | C++        | Easy         |
 |   237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)                                                 | C++        | Medium       |
 |   287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)                                                       | C++        | Medium       |
+|   295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)                                                 | C++        | Hard         |
+|   347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)                                                           | C++        | Medium       |
 |   485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)                                                                 | C++        | Easy         |
 |   493 | [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)                                                                               | C++        | Hard         |
+|   496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)                                                             | C++        | Easy         |
+|   540 | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)                                         | C++        | Medium       |
 |   646 | [Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)                                                 | C++        | Medium       |
 |   775 | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/)                                                   | C++        | Medium       |
 |   876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                                       | C++        | Easy         |
@@ -64,23 +80,6 @@ LeetCode
 |  2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)               | C++        | Medium       |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)   | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
-|46| [Permutations](https://leetcode.com/problems/permutations/)|C++|Medium|
-|51| [N-Queens](https://leetcode.com/problems/n-queens/)|C++|Hard|
-|37| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)|C++|Hard|
-|540| [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)|C++|Medium|
-|33| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|C++|Medium|
-|4| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|C++|Hard|
-|215| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|C++|Medium|
-|347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|C++|Medium|
-|295| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|C++|Hard|
-|232| [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/)|C++|Easy|
-|225| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/)|C++|Easy|
-|20| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|C++|Easy|
-|496| [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)|C++|Easy|
-|151| [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)|C++|Medium|
-|13| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)|C++|Easy|
-|14| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)|C++|Easy|
-
 
 
 
