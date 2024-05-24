@@ -3,7 +3,7 @@ public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
          vector<int> res(nums1.size(), -1); 
         stack<int> st;
-        unordered_map<int, int> umap;
+        unordered_map<int, int> m;
         
         for(int i=0; i<nums2.size(); i++)
         {
@@ -11,9 +11,9 @@ public:
             
             while(!st.empty() && element > st.top())
             {
-                //NGE of st.top() is element
+               
 				
-                umap[st.top()] = element;
+                m[st.top()] = element;
                 st.pop();
             }
             
@@ -24,10 +24,10 @@ public:
         {
             int ele = nums1[i];
             
-            if(umap.find(ele) != umap.end())
+            if(m.find(ele) != m.end())
             {
-                int nge = umap[ele];
-                res[i] = nge; //push NGE of desired element
+                int next = m[ele];
+                res[i] = next; 
             }
                 
         }
