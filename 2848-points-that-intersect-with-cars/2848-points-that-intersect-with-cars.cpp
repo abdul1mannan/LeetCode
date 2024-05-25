@@ -8,7 +8,7 @@ public:
         }
          int ans =0;
     int count =0;
-    for(int i =1; i <102; ++i){
+    for(int i =1; i <101; ++i){
         count += car[i];
         if(count > 0){
             ++ans;
