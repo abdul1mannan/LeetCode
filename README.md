@@ -80,6 +80,14 @@ LeetCode
 |  2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)               | C++        | Medium       |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)   | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
+|146|[ LRU Cache](https://leetcode.com/problems/lru-cache/)|C++|Medium|
+|460| [LFU Cache](https://leetcode.com/problems/lfu-cache/)|C++|Hard|
+|84| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)|C++|Hard|
+|239| [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|C++|Hard|
+|155| [Min Stack](https://leetcode.com/problems/min-stack/)|C++|Medium|
+|994| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|C++|Medium|
+|901| [Online Stock Span](https://leetcode.com/problems/online-stock-span/)|C++|Medium|
+
 
 
 
