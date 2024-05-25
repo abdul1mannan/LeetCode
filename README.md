@@ -87,7 +87,9 @@ LeetCode
 |155| [Min Stack](https://leetcode.com/problems/min-stack/)|C++|Medium|
 |994| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|C++|Medium|
 |901| [Online Stock Span](https://leetcode.com/problems/online-stock-span/)|C++|Medium|
-
+|28| [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|C++|Easy|
+|242| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)|C++|Easy|
+|8| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|C++|Medium|
 
 
 
