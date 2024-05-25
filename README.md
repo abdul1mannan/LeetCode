@@ -90,6 +90,10 @@ LeetCode
 |28| [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)|C++|Easy|
 |242| [Valid Anagram](https://leetcode.com/problems/valid-anagram/)|C++|Easy|
 |8| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|C++|Medium|
+|1854| [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/)|C++|Easy|
+|2848| [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/)|C++|Easy|
+|731| [My Calendar II](https://leetcode.com/problems/my-calendar-ii/)|C++|Medium|
+|1893| [Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/)|C++|Easy|
 
 
 
