@@ -94,6 +94,8 @@ LeetCode
 |2848| [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/)|C++|Easy|
 |731| [My Calendar II](https://leetcode.com/problems/my-calendar-ii/)|C++|Medium|
 |1893| [Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/)|C++|Easy|
+|300| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|C++|Medium|
+|72| [Edit Distance](https://leetcode.com/problems/edit-distance/)|C++|Medium|
 
 
 
