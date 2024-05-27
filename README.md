@@ -99,6 +99,7 @@ LeetCode
 |322| [Coin Change](https://leetcode.com/problems/coin-change/)|C++|Medium|
 |416| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)|C++|Medium|
 |1547| [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)|C++|Hard|
+|64| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|C++|Medium|
 
 
 
