@@ -96,6 +96,10 @@ LeetCode
 |1893| [Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/)|C++|Easy|
 |300| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|C++|Medium|
 |72| [Edit Distance](https://leetcode.com/problems/edit-distance/)|C++|Medium|
+|322| [Coin Change](https://leetcode.com/problems/coin-change/)|C++|Medium|
+|416| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)|C++|Medium|
+|1547| [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)|C++|Hard|
+
 
 
 
