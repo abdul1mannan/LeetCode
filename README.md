@@ -100,6 +100,8 @@ LeetCode
 |  2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/)                                           | C++        | Easy         |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)   | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
+|686| [Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|C++|Medium|
+|5| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|C++|Medium|
 
 
 
