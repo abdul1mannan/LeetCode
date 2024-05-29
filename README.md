@@ -102,6 +102,8 @@ LeetCode
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
 |686| [Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|C++|Medium|
 |5| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|C++|Medium|
+|139| [Word Break](https://leetcode.com/problems/word-break/)|C++|Medium|
+
 
 
 
