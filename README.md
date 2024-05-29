@@ -103,6 +103,9 @@ LeetCode
 |686| [Repeated String Match](https://leetcode.com/problems/repeated-string-match/)|C++|Medium|
 |5| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|C++|Medium|
 |139| [Word Break](https://leetcode.com/problems/word-break/)|C++|Medium|
+|38| [Count and Say](https://leetcode.com/problems/count-and-say/)|C++|Medium|
+|165| [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|C++|Medium|
+
 
 
 
