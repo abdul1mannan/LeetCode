@@ -105,6 +105,8 @@ LeetCode
 |139| [Word Break](https://leetcode.com/problems/word-break/)|C++|Medium|
 |38| [Count and Say](https://leetcode.com/problems/count-and-say/)|C++|Medium|
 |165| [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|C++|Medium|
+|459| [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|C++|Easy|
+
 
 
 
