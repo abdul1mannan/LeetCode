@@ -10,7 +10,7 @@ public:
 
         int minCost = INT_MAX;
         for (int i = left + 1; i < right; ++i) {
-            int currentCost = (cuts[right] - cuts[left]) + cost(left, i, cuts, memo) + cost(i, right, cuts, memo);
+            int currentCost = (cuts[right] - cuts[left]) + cost(left, i, cuts, memo) +                 cost(i, right, cuts, memo);
             minCost = min(minCost, currentCost);
         }
         memo[left][right] = minCost;
@@ -19,7 +19,7 @@ public:
    int minCost(int n, std::vector<int>& cuts) {
         cuts.push_back(0);
         cuts.push_back(n);
-      sort(cuts.begin(), cuts.end());
+        sort(cuts.begin(), cuts.end());
         int m = cuts.size();
        vector<vector<int>> memo(m, vector<int>(m, -1)); // Initialize memoization table with -1
 
