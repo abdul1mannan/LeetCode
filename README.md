@@ -106,6 +106,12 @@ LeetCode
 |38| [Count and Say](https://leetcode.com/problems/count-and-say/)|C++|Medium|
 |165| [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/)|C++|Medium|
 |459| [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/)|C++|Easy|
+|207| [Course Schedule](https://leetcode.com/problems/course-schedule/)|C++|Medium|
+|200| [Number of Islands](https://leetcode.com/problems/number-of-islands/)|C++|Medium|
+|785| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)|C++|Medium|
+|133| [Clone Graph](https://leetcode.com/problems/clone-graph/)|C++|Medium|
+
+
 
 
 
