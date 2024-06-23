@@ -110,6 +110,9 @@ LeetCode
 |200| [Number of Islands](https://leetcode.com/problems/number-of-islands/)|C++|Medium|
 |785| [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)|C++|Medium|
 |133| [Clone Graph](https://leetcode.com/problems/clone-graph/)|C++|Medium|
+|208| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)|C++|Medium|
+|421| [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)|C++|Medium|
+|1707| [Maximum XOR With an Element From Array](https://leetcode.com/problems/maximum-xor-with-an-element-from-array/)|C++|Hard|
 
 
 
