@@ -112,3 +112,9 @@ LeetCode
 |  2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/)                                           | C++        | Easy         |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)   | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                         | C++        | Easy         |
+|70| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|C++|Easy|
+|198|   [House Robber](https://leetcode.com/problems/house-robber/)|C++|Medium|
+|213| [House Robber II](https://leetcode.com/problems/house-robber-ii/)|C++|Medium|
+|2035| [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/)|C++|Hard|
+|494| [Target Sum](https://leetcode.com/problems/target-sum/)|C++|Medium|
+|518| [Coin Change II](https://leetcode.com/problems/coin-change-ii/)|C++|Medium|
