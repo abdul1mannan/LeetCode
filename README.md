@@ -56,6 +56,7 @@ LeetCode
 |   141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)                                                                       | C++        | Easy         |
 |   142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)                                                                 | C++        | Medium       |
 |   144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                             | C++        | Easy         |
+|145| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|C++|Easy|
 |   146 | [ LRU Cache](https://leetcode.com/problems/lru-cache/)                                                                                      | C++        | Medium       |
 |   151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)                                                       | C++        | Medium       |
 |   152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                                         | C++        | Medium       |
