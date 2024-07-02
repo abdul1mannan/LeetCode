@@ -14,7 +14,7 @@ public:
   
     
     vector<int> postorderTraversal(TreeNode* root) {
-         deque<int> res;
+         vector<int> res;
     TreeNode *curr=root;
     while (curr!=NULL) {
         if (curr->right) {
@@ -23,7 +23,7 @@ public:
                 prev = prev->left;
             }
             if (prev->left==NULL) {
-                res.push_front(curr->val);
+                res.push_back(curr->val);
                 prev->left = curr;
                 curr = curr->right;
             } else {
@@ -31,12 +31,12 @@ public:
                 curr = curr->left;
             }
         } else {
-            res.push_front(curr->val);
+            res.push_back(curr->val);
             curr = curr->left;
         }
     }
-    
-    return vector<int>(res.begin(), res.end());
+    reverse(res.begin(),res.end());
+    return res;
     }
         
 };
