@@ -15,24 +15,24 @@ public:
     
     vector<int> postorderTraversal(TreeNode* root) {
          deque<int> res;
-    
-    while (root) {
-        if (root->right) {
-            TreeNode* temp = root->right;
-            while (temp->left && temp->left != root) {
-                temp = temp->left;
+    TreeNode *curr=root;
+    while (curr!=NULL) {
+        if (curr->right) {
+            TreeNode* prev = curr->right;
+            while (prev->left && prev->left != curr) {
+                prev = prev->left;
             }
-            if (!temp->left) {
-                res.push_front(root->val);
-                temp->left = root;
-                root = root->right;
+            if (prev->left==NULL) {
+                res.push_front(curr->val);
+                prev->left = curr;
+                curr = curr->right;
             } else {
-                temp->left = nullptr;
-                root = root->left;
+                prev->left = nullptr;
+                curr = curr->left;
             }
         } else {
-            res.push_front(root->val);
-            root = root->left;
+            res.push_front(curr->val);
+            curr = curr->left;
         }
     }
     
