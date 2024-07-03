@@ -1,31 +1,23 @@
 class Solution {
 public:
-//     int lengthLis(int n,vector<int>&nums,int ind,int previndex,vector<vector<int>>&dp){
-        
-//         if(ind==n){
-//             return 0;
-//         }
-//         if(dp[ind][previndex+1]!=-1){
-//             return dp[ind][previndex+1];
-//         }
-//         int notake=lengthLis(n,nums,ind+1,previndex,dp);
-//         int take=0;
-//         if(previndex==-1||nums[ind]>nums[previndex]){
-//            take=1+lengthLis(n,nums,ind+1,ind,dp);
-//         }
-//         return dp[ind][previndex+1]=max(take,notake);
-//     }
-    
-    
     int lengthOfLIS(vector<int>& nums) {
-        int n = nums.size();
-        vector<int> dp(n, 1);
-        for (int i = 0; i < n; ++i)
-            for (int j = 0; j < i; ++j)
-                if (nums[i] > nums[j] && dp[i] < dp[j] + 1)
-                    dp[i] = dp[j] + 1;
-        return *max_element(dp.begin(), dp.end());
-        
-      
+           int n = nums.size();
+    if (n == 0) return 0;
+
+    vector<vector<int>> dp(n+1, vector<int>(n+1, 0));
+
+    for (int i = n-1; i >=0; i--) {
+        for (int j = i-1; j >=-1; j--) {
+           if(j==-1 || nums[i]>nums[j]){
+               dp[i][j+1]=max(dp[i+1][j+1],1+dp[i+1][i+1]);
+           }
+            else {
+                dp[i][j+1]=dp[i+1][j+1];
+            }
+        }
+    }
+        return dp[0][0];
+
+  
     }
 };
