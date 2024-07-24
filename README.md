@@ -127,3 +127,12 @@ LeetCode
 |  2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/)                                                       | C++        | Easy         |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)               | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                                     | C++        | Easy         |
+|547| [Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)|C++|Medium|
+|733|  [Flood Fill](https://leetcode.com/problems/flood-fill/description/)|C++|Easy|
+|542| [01 Matrix](https://leetcode.com/problems/01-matrix/description/)|C++|Medium|
+|210| [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/)|C++|Medium|
+|130| [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/)|C++|Medium|
+|1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/description/)|C++|Medium|
+|127| [Word Ladder](https://leetcode.com/problems/word-ladder/description/)|C++|Hard|
+|126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/)|C++|Hard|
+
