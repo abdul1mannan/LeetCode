@@ -21,7 +21,7 @@ public:
             for(auto edge:adj[x]){
                 int node=edge.first;
                 int costs=edge.second;
-                if(costs+c<cost[node] && stops<=k){
+                if(costs+c<cost[node] ){
                     cost[node]=costs+c;
                     q.push({{node,cost[node]},stops+1});
                     
