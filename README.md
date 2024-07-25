@@ -124,7 +124,7 @@ LeetCode
 |  1922 | [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/)                                                                                 | C++        | Medium       |
 |  2035 | [Partition Array Into Two Arrays to Minimize Sum Difference](https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/) | C++        | Hard         |
 |  2385 | [Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/)                           | C++        | Medium       |
-|  2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-that-intersect-with-cars/)                                                       | C++        | Easy         |
+|  2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-tha]t-intersect-with-cars/)                                                       | C++        | Easy         |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)               | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                                     | C++        | Easy         |
 |547| [Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)  |C++   |Medium|
@@ -136,4 +136,10 @@ LeetCode
 |1020| [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/description/)|C++|Medium|
 |127| [Word Ladder](https://leetcode.com/problems/word-ladder/description/)|C++|Hard|
 |126| [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/)|C++|Hard|
+|1091| [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)|C++|Medium|
+|1631| [Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)|C++|Medium|
+|787| [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)|C++|Medium|
+|743| [Network Delay Time](https://leetcode.com/problems/network-delay-time/)|C++|Medium|
+|1976| [Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/)|C++|Medium|
+|1334| [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/)|C++|Medium|
 
