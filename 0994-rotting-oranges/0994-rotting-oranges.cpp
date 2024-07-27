@@ -1,37 +1,65 @@
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
-         if(grid.empty()) return 0;
-        int m = grid.size(), n = grid[0].size(), days = 0, tot = 0, cnt =0;
-        queue<pair<int, int>> rotten;
-        for(int i = 0; i < m; ++i){
-            for(int j = 0; j < n; ++j){
-                if(grid[i][j] != 0) tot++;
-                if(grid[i][j] == 2) rotten.push({i, j});
-            }
-        }
+        int n=grid.size();
+        int m=grid[0].size();
+     
         
-        int dx[4] = {0, 0, 1, -1};
-        int dy[4] = {1, -1, 0, 0};
-        
-        while(!rotten.empty()){
-            int k=rotten.size();
-            cnt+=k;
-            while(k--){
-            int x=rotten.front().first;
-            int y=rotten.front().second;
-            rotten.pop();
-            for(int i=0; i<4;i++){
-                int newx=x+dx[i];
-                int newy=y+dy[i];
-                if(newx<0 ||newy<0||newx>=m||newy>=n|| grid[newx][newy]!=1) continue;
-                grid[newx][newy]=2;
-                rotten.push({newx,newy});
+        int rotten=0;
+        int total=0;
+        queue<pair<int,int>>q;
+        int dx[4]={1,-1,0,0};
+        int dy[4]={0,0,1,-1};
+            for(int i=0;i<n;i++){
+                for(int j=0;j<m;j++){
+                    if(grid[i][j]==2){
+                    
+                        total++;
+                        q.push({i,j});
+                    }
+                    if(grid[i][j]==1){
+                        total++;
+                    }
+                }
             }
+        int cnt=0;
+        while(!q.empty()){
+            rotten=q.size();
+            
+             while(rotten--){
+            int x=q.front().first;
+            int y=q.front().second;
+            q.pop();
+          
+          
+            for(int i=0;i<4;i++){
+                int nx=x+dx[i];
+                int ny=y+dy[i];
+                if(nx>=0 &&ny>=0 &&nx<n && ny<m && grid[nx][ny]==1){
+                    q.push({nx,ny});
+                    grid[nx][ny]=2;
+                }
             }
-            if(!rotten.empty()) days++;
+                
+                
+                
+                
+                }
+             if(!q.empty()){
+                     cnt++;
+                 }
         }
-        if(tot==cnt) return days;
+        int t=0;
+           for(int i=0;i<n;i++){
+                for(int j=0;j<m;j++){
+                  if(grid[i][j]==2){
+                t++;
+                        
+                    }}}
+        if(t==total)
+               return cnt;
+        
         else return -1;
+        
     }
 };
