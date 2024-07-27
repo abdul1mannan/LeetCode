@@ -28,7 +28,7 @@ public:
                 int nx = x + dx[i];
                 int ny = y + dy[i];
                 
-                if (nx >= 0 && ny >= 0 && nx < n && ny < m && mat[nx][ny] == 1 && vis[nx][ny] == 0) {
+                if (nx >= 0 && ny >= 0 && nx < n && ny < m &&                      vis[nx][ny] == 0) {
                     vis[nx][ny] = 1;
                     dist[nx][ny] = dist[x][y] + 1;
                     q.push({nx, ny});
