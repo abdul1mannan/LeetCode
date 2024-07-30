@@ -142,9 +142,20 @@ LeetCode
 |  2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-tha]t-intersect-with-cars/)                                                                                        | C++        | Easy         |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)                                                 | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                                                                       | C++        | Easy         |
+|102| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|C++|Medium|
+
 |1319| [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/)|C++|Medium|
 |947| [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)|C++|Medium|
+|104| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|C++|Easy|
+|110| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|C++|Easy|
+|543| [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|C++|Easy|
+|124| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/)|C++|Hard|
+|100| [Same Tree](https://leetcode.com/problems/same-tree/)|C++|Easy|
 |721| [Accounts Merge](https://leetcode.com/problems/accounts-merge/)|C++|Medium|
 |827| [Making A Large Island](https://leetcode.com/problems/making-a-large-island/)|C++|Hard|
 |778| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)|C++|Hard|
 |1192| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|C++|Hard|
+|103| [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|C++|Medium|
+  |199| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)|C++|Medium|
+  |101| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|C++|Easy|
+  
