@@ -47,10 +47,17 @@ LeetCode
 |    88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                                                                                                   | C++        | Easy         |
 |    90 | [Subsets II](https://leetcode.com/problems/subsets-ii/)                                                                                                                                   | C++        | Medium       |
 |    94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                                                                             | C++        | Medium       |
+|   100 | [Same Tree](https://leetcode.com/problems/same-tree/)                                                                                                                                     | C++        | Easy         |
+|   101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)                                                                                                                           | C++        | Easy         |
+|   102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)                                                                                     | C++        | Medium       |
+|   103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                                                                       | C++        | Medium       |
+|   104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                                                                               | C++        | Easy         |
+|   110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)                                                                                                               | C++        | Easy         |
 |   118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)                                                                                                                      | C++        | Easy         |
 |   121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                                                                         | C++        | Easy         |
 |   122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)                                                                                   | C++        | Medium       |
 |   123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/)                                                                     | C++        | Hard         |
+|   124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/)                                                                                   | C++        | Hard         |
 |   126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/)                                                                                                               | C++        | Hard         |
 |   127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/)                                                                                                                     | C++        | Hard         |
 |   128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)                                                                                               | C++        | Medium       |
@@ -73,6 +80,7 @@ LeetCode
 |   188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)                                                                                   | C++        | Hard         |
 |   191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)                                                                                                                       | C++        | Easy         |
 |   198 | [House Robber](https://leetcode.com/problems/house-robber/)                                                                                                                               | C++        | Medium       |
+|   199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)                                                                                                 | C++        | Medium       |
 |   200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/)                                                                                                                     | C++        | Medium       |
 |   206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)                                                                                                                 | C++        | Easy         |
 |   207 | [Course Schedule](https://leetcode.com/problems/course-schedule/)                                                                                                                         | C++        | Medium       |
@@ -105,20 +113,25 @@ LeetCode
 |   518 | [Coin Change II](https://leetcode.com/problems/coin-change-ii/)                                                                                                                           | C++        | Medium       |
 |   540 | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)                                                                                       | C++        | Medium       |
 |   542 | [01 Matrix](https://leetcode.com/problems/01-matrix/description/)                                                                                                                         | C++        | Medium       |
+|   543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)                                                                                                         | C++        | Easy         |
 |   547 | [Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)                                                                                                     | C++        | Medium       |
 |   646 | [Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)                                                                                               | C++        | Medium       |
 |   673 | [Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)                                                                       | C++        | Medium       |
 |   686 | [Repeated String Match](https://leetcode.com/problems/repeated-string-match/)                                                                                                             | C++        | Medium       |
 |   714 | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)                                               | C++        | Medium       |
+|   721 | [Accounts Merge](https://leetcode.com/problems/accounts-merge/)                                                                                                                           | C++        | Medium       |
 |   731 | [My Calendar II](https://leetcode.com/problems/my-calendar-ii/)                                                                                                                           | C++        | Medium       |
 |   733 | [Flood Fill](https://leetcode.com/problems/flood-fill/description/)                                                                                                                       | C++        | Easy         |
 |   743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/)                                                                                                                   | C++        | Medium       |
 |   775 | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/)                                                                                                 | C++        | Medium       |
+|   778 | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)                                                                                                               | C++        | Hard         |
 |   785 | [Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)                                                                                                                  | C++        | Medium       |
 |   787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)                                                                                         | C++        | Medium       |
 |   802 | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)                                                                                                     | C++        | Medium       |
+|   827 | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/)                                                                                                             | C++        | Hard         |
 |   876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)                                                                                                     | C++        | Easy         |
 |   901 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/)                                                                                                                     | C++        | Medium       |
+|   947 | [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)                                                                 | C++        | Medium       |
 |   987 | [Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)                                                                     | C++        | Hard         |
 |   994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)                                                                                                                         | C++        | Medium       |
 |  1020 | [Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/description/)                                                                                                       | C++        | Medium       |
@@ -126,7 +139,9 @@ LeetCode
 |  1048 | [Longest String Chain](https://leetcode.com/problems/longest-string-chain/)                                                                                                               | C++        | Medium       |
 |  1091 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)                                                                                           | C++        | Medium       |
 |  1143 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)                                                                                                   | C++        | Medium       |
+|  1192 | [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)                                                                                     | C++        | Hard         |
 |  1281 | [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)                                               | C++        | Easy         |
+|  1319 | [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/)                                                           | C++        | Medium       |
 |  1334 | [Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | C++        | Medium       |
 |  1512 | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)                                                                                                               | C++        | Easy         |
 |  1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)                                                                                                 | C++        | Hard         |
@@ -142,20 +157,3 @@ LeetCode
 |  2848 | [Points That Intersect With Cars](https://leetcode.com/problems/points-tha]t-intersect-with-cars/)                                                                                        | C++        | Easy         |
 |  2958 | [Length of Longest Subarray With at Most K Frequency](https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/)                                                 | C++        | Medium       |
 |  2965 | [Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/)                                                                                       | C++        | Easy         |
-|102| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|C++|Medium|
-
-|1319| [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/)|C++|Medium|
-|947| [Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)|C++|Medium|
-|104| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|C++|Easy|
-|110| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|C++|Easy|
-|543| [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|C++|Easy|
-|124| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/)|C++|Hard|
-|100| [Same Tree](https://leetcode.com/problems/same-tree/)|C++|Easy|
-|721| [Accounts Merge](https://leetcode.com/problems/accounts-merge/)|C++|Medium|
-|827| [Making A Large Island](https://leetcode.com/problems/making-a-large-island/)|C++|Hard|
-|778| [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/)|C++|Hard|
-|1192| [Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|C++|Hard|
-|103| [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|C++|Medium|
-  |199| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)|C++|Medium|
-  |101| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|C++|Easy|
-  
