@@ -14,32 +14,27 @@ public:
     
   
     vector<int> preorderTraversal(TreeNode* root) {
+      vector<int>ans;
+        if(root==nullptr){
+            return ans;
+        }
+        stack<TreeNode*>s;
+        s.push(root);
         
-        vector<int>res;
-        TreeNode*curr=root;
-      while(curr!=nullptr){
-       if(curr->left==NULL){
-           res.push_back(curr->val);
-           curr=curr->right;
-       }
-          else {
-              TreeNode *prev=curr->left;
-              while(prev->right && prev->right!=curr){
-                  prev=prev->right;
-              }
-              if(prev->right==NULL){
-                   res.push_back(curr->val);
-                  prev->right=curr;
-                  curr=curr->left;
-              }
-              else{
-                  prev->right=NULL;
-                 
-                  curr=curr->right;
-              }
-          }
-          
-      }
-        return res;
+        
+        while(!s.empty()){
+            auto it=s.top();
+            s.pop();
+            ans.push_back(it->val);
+            
+            if(it->right!=NULL){
+                s.push(it->right);
+            }
+            if(it->left!=NULL){
+                s.push(it->left);
+            }
+            
+        }
+        return ans;
     }
 };
