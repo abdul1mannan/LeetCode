@@ -19,24 +19,37 @@ public:
         }
         
         int lh=height(root->left);
-        int rh=height(root->right);
         
+        if(lh==-1){
+            return -1;
+        }
+        int rh=height(root->right);
+        if(rh==-1){
+            return -1;
+        }
+        
+        if(abs(lh-rh)>1){
+            return -1;
+        }
         return max(lh,rh)+1;
     }
     bool isBalanced(TreeNode* root) {
         
-        if(root==nullptr){
-            return true;
-        }
-        
-        int lh=height(root->left);
-        int rh=height(root->right);
-        
-        if(abs(lh-rh)<=1 && isBalanced(root->left) && isBalanced(root->right)){
-            return true;
-        }
         
         
-        return false;
+     return height(root)!=-1;
+//         if(root==nullptr){
+//             return true;
+//         }
+        
+//         int lh=height(root->left);
+//         int rh=height(root->right);
+        
+//         if(abs(lh-rh)<=1 && isBalanced(root->left) && isBalanced(root->right)){
+//             return true;
+//         }
+        
+        
+//         return false;
     }
 };
