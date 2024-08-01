@@ -17,11 +17,32 @@ public:
         if(root==NULL){
             return;
         }
-       flatten(root->right);
-        flatten(root->left);
         
-        root->right=prev;
-        root->left=NULL;
-        prev=root;
+        stack<TreeNode*>st;
+        
+        st.push(root);
+        
+        while(!st.empty()){
+            
+            auto it =st.top();
+            st.pop();
+            if(it->right!=NULL){
+                st.push(it->right);
+            }
+             if(it->left!=NULL){
+                st.push(it->left);
+            }
+            
+            if(!st.empty()){
+                it->right=st.top();
+            }
+            it->left=NULL;
+        }
+//        flatten(root->right);
+//         flatten(root->left);
+        
+//         root->right=prev;
+//         root->left=NULL;
+//         prev=root;
     }
 };
