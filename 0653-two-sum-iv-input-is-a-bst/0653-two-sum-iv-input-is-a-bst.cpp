@@ -9,23 +9,62 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+class BSTIterator {
+    stack<TreeNode*> s;
+bool reverse=true;
+public:
+    BSTIterator(TreeNode* root,bool isreverse) {
+         reverse=isreverse;
+        pushAllLeft(root);
+       
+    }
+    
+    int next() {
+        TreeNode* node = s.top();
+        s.pop();
+        if(!reverse)
+        pushAllLeft(node->right);
+        
+        else{
+            pushAllLeft(node->left);
+        }
+        return node->val;
+    }
+    
+    bool hasNext() {
+        return !s.empty();
+    }
+
+private:
+    void pushAllLeft(TreeNode* node) {
+        while (node != nullptr) {
+             s.push(node);
+            if(!reverse){
+           
+            node = node->left;
+            }
+            else{
+                s.push(node);
+                node=node->right;
+            }
+        }
+    }
+};
 class Solution {
 public:
-        unordered_map<int,int>mp;
+ 
     bool findTarget(TreeNode* root, int k) {
         if(root==NULL) return false;
+        BSTIterator l(root,false);
+        BSTIterator r(root,true);
     
-     
-        int curr=k-root->val;
-        if(mp.find(curr)!=mp.end())
-        {
-            return true;
+        int i=l.next();
+        int j=r.next();
+        while(i<j){
+            if(i+j==k) return true;
+            else if(i+j<k) i=l.next();
+            else j=r.next();
         }
-        else{
-            mp[root->val]=1;
-            return findTarget(root->left,k) || findTarget(root->right,k);
-        }
-            
-        
+        return false;
     }
 };
