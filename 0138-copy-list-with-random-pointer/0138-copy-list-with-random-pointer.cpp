@@ -16,52 +16,53 @@ public:
 
 class Solution {
 public:
-    Node* copyRandomList(Node* head) {
-        // map<Node*,Node*>c;
-        auto temp=head;
-     if(head==NULL){
-         return NULL;
-     }
+    
+    void insertnode(Node *head){
+        Node *temp=head;
+        while(temp!=NULL){
+            Node *node=temp->next;
+            Node *copy=new Node(temp->val);
+            copy->next=node;
+            temp->next=copy;
+            temp=node;
+        }
+    }
+    
+    void connectrandom(Node *head){
+        Node *temp=head;
+        while(temp!=NULL){
+            Node *node=temp->next;
+            if(temp->random){
+                node->random=temp->random->next;
+                
+            }
+            else{
+                node->random=NULL;
+            }
+            temp=temp->next->next;
+        }
+    }
+    Node* copy(Node *head){
+        Node *temp=head;
+        Node *dummy=new Node(-1);
+    Node *res=dummy;
         
         while(temp!=NULL){
-            Node *newNode=new Node(temp->val);
-            newNode->next=temp->next;
-            temp->next=newNode;
-            temp=temp->next->next;
-        }
-        temp=head;
-        while(temp!=NULL){
-            Node*copy=temp->next;
-            if(temp->random==NULL){
-                copy->random=NULL;
-            }
-            else {
-            copy->random=temp->random->next;
-            }
-            temp=temp->next->next;
-        }
-        temp=head;
-        Node *dummy=new Node(-1);
-        auto curr=dummy;
-        while(temp!=NULL){
-            dummy->next=temp->next;
+            res->next=temp->next;
+            res=res->next;
+            
             temp->next=temp->next->next;
             temp=temp->next;
-           dummy=dummy->next;
         }
-        return curr->next;
-        // while(temp!=NULL){
-        //   Node *newNode=new Node(temp->val);
-        //     c[temp]=newNode;
-        //     temp=temp->next;
-        // }
-        // temp=head;
-        // while(temp!=NULL){
-        //     Node *copy=c[temp];
-        //     copy->next=c[temp->next];
-        //     copy->random=c[temp->random];
-        //     temp=temp->next;
-        // }
-        // return c[head];
+        return dummy->next;
+    
+    }
+    
+    Node* copyRandomList(Node* head) {
+        if(head==NULL) return head;
+        
+        insertnode(head);
+        connectrandom(head);
+        return copy(head);
     }
 };
