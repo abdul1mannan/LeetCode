@@ -10,55 +10,53 @@
  */
 class Solution {
 public:
-   
-    
-    ListNode *reverseList(ListNode*temp){
-        ListNode*dumb=temp;
-        ListNode*prev=NULL;
+    ListNode *reversell(ListNode *head){
         
-        while(dumb!=NULL){
-            ListNode* curr=dumb->next;
-            dumb->next=prev;
-            prev=dumb;
-            dumb=curr;
+        if(head==NULL ||head->next==NULL){
+            return head;
         }
-        return prev;
+        
+        ListNode*newhead=reversell(head->next);
+        ListNode *front=head->next;
+        front->next=head;
+        head->next=NULL;
+        
+        return newhead;
     }
-    ListNode *getnode(ListNode*temp,int k){
+    
+    ListNode *findkth(ListNode *head,int k){
         
         k--;
-        while(temp!=NULL && k>0){
-             k--;
-            temp=temp->next;
-           
+        while(head!=NULL && k>0){
+            k--;
+            head=head->next;
         }
-        return temp;
+        return head;
     }
-    
     ListNode* reverseKGroup(ListNode* head, int k) {
-       auto temp=head;
-        ListNode*prev=NULL;
-       while(temp!=NULL){
-           ListNode *kNode=getnode(temp,k);
-           if(kNode==NULL){
-               if(prev){
-                   prev->next=temp;
-               }
-               break;
-           }
-           ListNode*curr=kNode->next;
-           kNode->next=NULL;
-           reverseList(temp);
-           if(temp==head){
-               head=kNode;
-           }
-           else {
-               prev->next=kNode;
-               
-           }
-           prev=temp;
-           temp=curr;
-       }
+        if(head==NULL || head->next==NULL) return head;
+        ListNode *temp=head;
+        ListNode *prev=NULL;
+        while(temp!=NULL){
+        ListNode *kthnode=findkth(temp,k);
+        if(kthnode==NULL){
+            if(prev){
+                prev->next=temp;
+            }
+            break;
+        }
+            ListNode *coming=kthnode->next;
+            kthnode->next=NULL;
+             reversell(temp);
+            if(temp==head){
+                head=kthnode;
+            }
+            else {
+                prev->next=kthnode;
+        }
+        prev=temp;
+        temp=coming;
+        }
         return head;
     }
 };
