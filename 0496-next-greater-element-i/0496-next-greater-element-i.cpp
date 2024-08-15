@@ -1,7 +1,8 @@
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
-         vector<int> res(nums1.size(), -1); 
+
+       vector<int> res(nums1.size(), -1); 
         stack<int> st;
         unordered_map<int, int> m;
         
@@ -33,6 +34,5 @@ public:
         }
         
         return res;
-        
     }
 };
