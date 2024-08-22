@@ -21,21 +21,16 @@ public:
      while (!st.empty()) {
         res.push_back(st.top());
         st.pop();
-    } 
-        reverse(res.begin(), res.end());
-    
-
-    int start = 0;
-    while (start < res.size() && res[start] == '0') {
-        start++;
     }
-    
- 
-    res = res.substr(start);
-    if (res.empty()) {
-        return "0";
-    }
-    
-    return res;
+        
+        while(res.size()!=0 && res.back()=='0'){
+            res.pop_back();
+        }
+        reverse(res.begin(),res.end());
+        if(res.empty()){
+            return "0";
+        }
+        
+        return res;
     }
 };
