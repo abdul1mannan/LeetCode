@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        queue<pair<pair<int,int>,int>>q;
+        queue<pair<int,pair<int,int>>>q;
        vector<int>cost(n,1e9);
       vector<vector<pair<int, int>>> adj(n);
         for (auto it : flights)
@@ -9,13 +9,13 @@ public:
             adj[it[0]].push_back({it[1], it[2]});
         }
         cost[src]=0;
-        q.push({{src,0},0});
+        q.push({0,{src,0}});
         
         while(!q.empty()){
             auto it=q.front();
-            int x=it.first.first;
-            int c=it.first.second;
-            int stops=it.second;
+            int x=it.second.first;
+            int c=it.second.second;
+            int stops=it.first;
             q.pop();
             if(stops>k) continue;
             for(auto edge:adj[x]){
@@ -23,7 +23,7 @@ public:
                 int costs=edge.second;
                 if(costs+c<cost[node] ){
                     cost[node]=costs+c;
-                    q.push({{node,cost[node]},stops+1});
+                    q.push({stops+1,{node,cost[node]}});
                     
                 }
                 
