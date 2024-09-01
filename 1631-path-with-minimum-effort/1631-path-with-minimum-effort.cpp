@@ -7,18 +7,18 @@ public:
         int dx[4]={1,-1,0,0};
         int dy[4]={0,0,-1,1};
         
-     priority_queue<pair<pair<int,int>, int>,
-                       vector<pair<pair<int,int>, int>>,
-                       greater<pair<pair<int,int>, int>>>q;
-        q.push({{0,0},0});
+     priority_queue<pair<int,pair<int,int>>,
+                       vector<pair<int,pair<int,int>>>,
+                       greater<pair<int,pair<int,int>>>>q;
+        q.push({0,{0,0}});
         vector<vector<int>>dist(n,vector<int>(m,1e9));
         dist[0][0]=0;
         
         while(!q.empty()){
             auto t=q.top();
-            int x=t.first.first;
-            int y=t.first.second;
-            int dis=t.second;
+            int x=t.second.first;
+            int y=t.second.second;
+            int dis=t.first;
              // if(x==n-1 &&y ==m-1){
              //           return dist[x][y];
              //       }
@@ -26,13 +26,12 @@ public:
            for(int i=0;i<4;i++){
                int nx=x+dx[i];
                int ny=y+dy[i];
-               if(nx>=0 && ny>=0 && nx<n && ny<m ){
-                   int effort=max(abs(heights[x][y]-heights[nx][ny]),dis);
-                   if(effort<dist[nx][ny]){
-                   dist[nx][ny]=effort;
+               if(nx>=0 && ny>=0 && nx<n && ny<m && dist[nx][ny]>(max(abs(heights[x][y]-heights[nx][ny]),dis)) ){
+                 
+                   dist[nx][ny]=max(abs(heights[x][y]-heights[nx][ny]),dis);
                   
-                   q.push({{nx,ny},dist[nx][ny]});
-                   }
+                   q.push({dist[nx][ny],{nx,ny}});
+                   
                }
            }
         }
