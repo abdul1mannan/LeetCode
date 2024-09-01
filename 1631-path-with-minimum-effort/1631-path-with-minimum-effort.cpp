@@ -19,9 +19,9 @@ public:
             int x=t.second.first;
             int y=t.second.second;
             int dis=t.first;
-             // if(x==n-1 &&y ==m-1){
-             //           return dist[x][y];
-             //       }
+             if(x==n-1 &&y ==m-1){
+                       return dist[x][y];
+                   }
             q.pop();
            for(int i=0;i<4;i++){
                int nx=x+dx[i];
