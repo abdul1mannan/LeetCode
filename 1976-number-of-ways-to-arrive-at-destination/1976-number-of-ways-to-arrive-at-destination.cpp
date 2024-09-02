@@ -1,45 +1,38 @@
 class Solution {
 public:
-     long long mod = (long long)1e9+7;
     int countPaths(int n, vector<vector<int>>& roads) {
-    
-        vector<vector<pair<long long, long long>>> adj(n);
+        int mod=1e9+7;
+          vector<vector<pair<int, int>>> adj(n);
 
-        // Building adjacency list
-        for (auto& it : roads) {
-            adj[it[0]].emplace_back(it[1], it[2]);
-            adj[it[1]].emplace_back(it[0], it[2]);
-        }
-
-        vector<long long> dist(n,LLONG_MAX);
-        vector<long long> ways(n, 0);
-        priority_queue<pair<long long, long long>, vector<pair<long long, long long>>,          greater<pair<long long, long long>>> q;
-
-        // Starting from node 0
-        dist[0] = 0;
-        ways[0] = 1;
-        q.push({0, 0});
-
-        while (!q.empty()) {
-            long long int d = q.top().first;
-            long long node = q.top().second;
+ 
+    for (auto& it : roads) {
+        adj[it[0]].push_back({it[1], it[2]});
+             adj[it[1]].push_back({it[0], it[2]});
+    }
+        vector<long long int>dis(n,LLONG_MAX);
+        dis[0]=0;
+        
+        priority_queue<pair<long long int,int>,vector<pair<long long int,int>>,greater<pair<long long int,int>>>q;
+        q.push({0,0});
+        vector<int>count(n,0);
+        count[0]=1;
+        while(!q.empty()){
+            int t=q.top().second;
+            long long int dist=q.top().first;
             q.pop();
-
-            for (auto edge : adj[node]) {
-                long long int adjNode = edge.first;
-                long long cost = edge.second;
-
-                if (cost + d < dist[adjNode]) {
-                    dist[adjNode] = cost + d;
-                   
-                    ways[adjNode] = ways[node];
-                     q.push({dist[adjNode], adjNode});
-                } else if (cost + d == dist[adjNode]) {
-                    ways[adjNode] = (ways[adjNode] + ways[node]) % mod;
+            for(auto &it:adj[t]){
+                 int node=it.first;
+                long long int time=it.second;
+                if((time+dist)<dis[node]){
+                    dis[node]=time+dist;
+                    count[node]=count[t];
+                    q.push({time+dist,node});
+                }
+                else if(time+dist==dis[node]){
+                    count[node]=(count[node]+count[t])%mod;
                 }
             }
         }
-
-        return (ways[n - 1] % mod);
+        return count[n-1]%mod;
     }
 };
