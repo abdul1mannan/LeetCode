@@ -1,44 +1,35 @@
 class Solution {
 public:
-    vector<int> nse(vector<int>& arr) {
-        stack<int> st;
-        vector<int> ans(arr.size());
-        
-        for (int i = arr.size() - 1; i >= 0; i--) {
-            while (!st.empty() && arr[st.top()] >= arr[i]) {
-                st.pop();
-            }
-            ans[i] = st.empty() ? arr.size() : st.top();
-            st.push(i);
-        }
-        return ans;
-    }
-    
-    vector<int> pse(vector<int>& arr) {
-        stack<int> st;
-        vector<int> ans(arr.size());
-        
-        for (int i = 0; i < arr.size(); i++) {
-            while (!st.empty() && arr[st.top()] > arr[i]) {
-                st.pop();
-            }
-            ans[i] = st.empty() ? -1 : st.top();
-            st.push(i);
-        }
-        return ans;
-    }
-    
     int sumSubarrayMins(vector<int>& arr) {
-        vector<int> nexts = nse(arr);
-        vector<int> prevs = pse(arr);
-        int total = 0;
-        int mod = 1e9 + 7;
-        
-        for (int i = 0; i < arr.size(); i++) {
-            int left = i - prevs[i];
-            int right = nexts[i] - i;
-            total = (total + (long long)(right * left % mod) * arr[i] % mod) % mod;
+        int n = arr.size();
+        vector<int> pse(n), nse(n);
+        stack<int> s1, s2;
+
+    
+        for (int i = 0; i < n; i++) {
+            while (!s1.empty() && arr[s1.top()] > arr[i]) {
+                s1.pop();
+            }
+            pse[i] = s1.empty() ? (i + 1) : (i - s1.top());
+            s1.push(i);
         }
-        return total;
+
+
+        for (int i = n - 1; i >= 0; i--) {
+            while (!s2.empty() && arr[s2.top()] >= arr[i]) {
+                s2.pop();
+            }
+            nse[i] = s2.empty() ? (n - i) : (s2.top() - i);
+            s2.push(i);
+        }
+
+        long long res = 0;
+        int MOD = 1e9 + 7;
+        for (int i = 0; i < n; i++) {
+            long long contrib = (1LL * arr[i] * pse[i] % MOD) * nse[i] % MOD;
+            res = (res + contrib) % MOD;
+        }
+
+        return (int)res;
     }
 };
