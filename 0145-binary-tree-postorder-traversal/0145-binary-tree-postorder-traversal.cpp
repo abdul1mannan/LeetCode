@@ -11,48 +11,17 @@
  */
 class Solution {
 public:
-  
-    
+  vector<int>post;
     vector<int> postorderTraversal(TreeNode* root) {
-         vector<int>ans;
-         if(root==nullptr){
-             return ans;
-         }
-        
-        TreeNode*curr=root;
+         if(root==nullptr) return {};
+         
+     
+
       
-        
-        while(curr!=NULL){
-            if(curr->right==NULL){
-                ans.push_back(curr->val);
-                          curr=curr->left;
-              }
-                else{
-            
-                 TreeNode*prev=curr->right;
-                    
-                 while(prev->left!=NULL && prev->left!=curr){
-                    prev=prev->left;
-                }
-                if(prev->left==NULL){
-                     ans.push_back(curr->val);
-                    prev->left=curr;
-                    curr=curr->right;
-                }
-                else{
-                    prev->left=NULL;
-                  
-                    curr=curr->left;
-                }
-            } 
-        }
-        reverse(ans.begin(),ans.end());
-           
-        
-        
-       return ans;
-        
-    
+         postorderTraversal(root->left);
+         postorderTraversal(root->right);
+            post.push_back(root->val);
+
+         return post;
     }
-        
 };
