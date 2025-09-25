@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/lfu-cache/">460. LFU Cache</a></h2><h3>Hard</h3><hr><div><p>Design and implement a data structure for a <a href="https://en.wikipedia.org/wiki/Least_frequently_used" target="_blank">Least Frequently Used (LFU)</a> cache.</p>
+<h2><a href="https://leetcode.com/problems/lfu-cache/">460. LFU Cache</a></h2><h3>Hard</h3><hr><p>Design and implement a data structure for a <a href="https://en.wikipedia.org/wiki/Least_frequently_used" target="_blank">Least Frequently Used (LFU)</a> cache.</p>
 
 <p>Implement the <code>LFUCache</code> class:</p>
 
@@ -17,8 +17,9 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input</strong>
-["LFUCache", "put", "put", "get", "put", "get", "get", "put", "get", "get", "get"]
+<pre>
+<strong>Input</strong>
+[&quot;LFUCache&quot;, &quot;put&quot;, &quot;put&quot;, &quot;get&quot;, &quot;put&quot;, &quot;get&quot;, &quot;get&quot;, &quot;put&quot;, &quot;get&quot;, &quot;get&quot;, &quot;get&quot;]
 [[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]
 <strong>Output</strong>
 [null, null, null, 1, null, -1, 3, null, -1, 3, 4]
@@ -56,4 +57,4 @@ lfu.get(4);      // return 4
 </ul>
 
 <p>&nbsp;</p>
-<span style="display: none;">&nbsp;</span></div>
+<span style="display: none;">&nbsp;</span>
