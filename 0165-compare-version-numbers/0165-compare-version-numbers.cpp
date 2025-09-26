@@ -1,31 +1,27 @@
 class Solution {
 public:
     int compareVersion(string version1, string version2) {
-         istringstream v1(version1);
-        istringstream v2(version2);
-        
-        string num1, num2;
-   
-        while( ! v1.eof() || ! v2.eof()) {
-            if(! v1.eof()) {
-                getline(v1, num1, '.');
-            } else {
-                num1 = "0";
-            }
-            
-            if(! v2.eof()) {
-                getline(v2, num2, '.');
-            } else {
-                num2 = "0";
-            }
-            
+        int i = 0, j = 0;
+        int n = version1.size(), m = version2.size();
 
-            int n1 = stoi(num1), n2 = stoi(num2);
-            
-            if(n1 == n2)    continue;
-            return (n1 > n2) ? 1 : - 1;
+        while (i < n || j < m) {
+            long long num1 = 0, num2 = 0;
+
+            while (i < n && version1[i] != '.') {
+                num1 = num1 * 10 + (version1[i] - '0');
+                ++i;
+            }
+            while (j < m && version2[j] != '.') {
+                num2 = num2 * 10 + (version2[j] - '0');
+                ++j;
+            }
+
+            if (num1 < num2) return -1;
+            if (num1 > num2) return 1;
+
+            if (i < n && version1[i] == '.') ++i;
+            if (j < m && version2[j] == '.') ++j;
         }
-        
         return 0;
     }
 };
