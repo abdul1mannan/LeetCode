@@ -4,26 +4,25 @@ public:
         
        
         int n = arrivals.size();
-         queue<pair<int,int>>kept;
         map<int, int> mpp;
         int cnt = 0;
-     
-        for (int i = 0; i < n; i++) {
-            int start=i-w+1;
-            while(!kept.empty() && kept.front().first < start){
-                int type=kept.front().second;
-                kept.pop();
-                if(--mpp[type]==0) mpp.erase(type);
-            }
-            int item=arrivals[i];
-
-            if (mpp[arrivals[i]] >= m) {
+        for (int i = 0; i < w; i++) {
+            mpp[arrivals[i]]++;
+            if (mpp[arrivals[i]] > m) {
                 cnt++;
-        
+               mpp[arrivals[i]]--;
+               arrivals[i]=0;
             }
-            else {
-                kept.push({i,item});
-                mpp[item]++;
+        }
+        int left = 0;
+        for (int i = w; i < n; i++) {
+            mpp[arrivals[left]]--;
+            left++;
+            mpp[arrivals[i]]++;
+            if (mpp[arrivals[i]] > m) {
+                cnt++;
+               mpp[arrivals[i]]--;
+               arrivals[i]=0;
             }
         }
         return cnt;
